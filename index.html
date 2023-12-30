@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Choreslist</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main class="container">
+            <section class="section-input" id="section-input">
+                <h1>Choreslist</h1>
+                <div class="div-inputs">
+                    <input type="text" class="input-chore" id="input-chore" placeholder="Do dishes" aria-label="Chore input field">
+                    <button class="btn btn-add" id="btn-add" aria-label="Add chore button">-></button>
+                    <button class="btn btn-del" id="btn-del-complete" aria-label="Delete completed chores button">✕</button>
+                    <button class="btn btn-res" id="btn-reset" aria-label="Reset chore list button">↻</button>
+                </div>
+            </section>
+            <section id="section-choreslist">
+                <ul class="ul-choreslist" id="ul-choreslist">
+            
+                </ul>
+            </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>

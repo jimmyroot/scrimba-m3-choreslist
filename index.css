@@ -1,0 +1,129 @@
+*, ::before, ::after {
+    box-sizing: inherit;
+    /* border: 1px solid hotpink; */
+}
+
+/* form > *, */
+html {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+}
+
+:root {
+    --white: #FEFEFE;
+    --black: #000000;
+    --text-input-bg: #EEEEEE;
+    --text-input-color-placeholder: #A4A4A4;
+    --btn-add: #FFCC68;
+    --btn-del: #FF9548;
+    --btn-res: #ff4d00;
+    --chore: #FBDF7C;
+    --border-radius: 8px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Concert One', cursive;
+    font-size: 70px;
+    margin: 75px 0 50px 0;
+}
+
+.btn {
+    font-family: inherit;
+    /* font-size: 30px; */
+    border-radius: var(--border-radius);
+    border: none;
+    padding: 32px;
+    margin: 0;
+    transition-duration: 0.05s;
+
+}
+
+.btn-add {
+    background-color: var(--btn-add);
+}
+
+.btn-del {
+    background-color: var(--btn-del);
+}
+
+.btn-res {
+    background-color: var(--btn-res);
+    font-size: 38px;
+    padding: 28px 32px
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(1.0);
+}
+
+.container {
+    width: 638px;
+    margin: 0 auto;
+}
+
+.input-chore {
+    background-color: var(--text-input-bg);
+    width: 52%;
+    text-align: center;
+    border-radius: var(--border-radius);
+    border: none;
+    padding: 32px;
+    margin: 0;
+}
+
+.input-chore::placeholder {
+    color: var(--text-input-color-placeholder);
+}
+
+.div-inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ul-choreslist {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    margin: 15px 0 0 0;
+    /* Stop user selecting chore text */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.li-chore {
+    background-color: var(--chore);
+    border-radius: var(--border-radius);
+    margin: 0;
+    padding: 32px;
+}
+
+.is-empty-warning {
+    outline: 2px solid var(--btn-del);
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.empty-list {
+    color: var(--text-input-color-placeholder);
+    padding-top: 25px;
+}
